@@ -1,0 +1,207 @@
+/* General */ 
+
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+
+    background-color: #ffd662ff;
+    padding-bottom: 2%;
+}
+
+
+/** Header **/
+
+header {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/** Form **/
+
+#formInput {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    margin-top: 0.5%;
+}
+
+#cityLabel {
+    margin-top: 1%;
+    margin-right: 2px;
+}
+
+#countryLabel {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2px;
+}
+
+
+#getWeatherButton {
+    background-color: #00539cff;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+
+/** Current Weather Info */
+
+#currentTempResults {
+    display: flex;
+}
+
+#currentTempInfoContainer {
+    margin-left: 10%;
+}
+
+#currentTempContainer {
+    background-color: #00539cff;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#currentCondition,
+#currentFeelsLike,
+#currentWindSpeed,
+#currentLow,
+#currentHigh {
+    font-size: 20px;
+}
+
+#city {
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
+
+#currentTemp {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#currentIcon {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#currentHumidity {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+#currentWindSpeed {
+    margin-left: 10%;
+}
+
+
+/* Upcoming Forecast */
+
+.card {
+    margin: 2%;
+}
+
+.card-group .card p {
+    font-size: 18px;
+}
+
+#upcomingForecast {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h2 {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#currentIcon,
+#icon,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+    background-color: rgba(208, 208, 208, 0.873);
+    width: 100px;
+    height: 100px
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+    #currentTempContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #currentIcon {
+        margin: 10px 0;
+    }
+
+    #currentTempInfoContainer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #currentTempInfoContainer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #currentTempInfoContainer .col {
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    #currentHumidity,
+    #currentWindSpeed {
+        margin-left: 0;
+    }
+
+    h2 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        margin: 2%;
+    }
+
+    #getWeatherButton {
+        margin-bottom: 5%;
+    }
+}
